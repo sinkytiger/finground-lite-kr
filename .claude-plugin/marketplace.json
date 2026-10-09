@@ -1,0 +1,12 @@
+{
+  "name": "finground-lite-kr",
+  "owner": { "name": "sinkytiger" },
+  "description": "Korean DART disclosure fact-checker for Claude Code",
+  "plugins": [
+    {
+      "name": "finground-lite-kr",
+      "source": "./",
+      "description": "Verify numeric claims about Korean listed companies against DART filings (skill + MCP server)"
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+[
+ {
+  "id": "005930-operating_income-2025H1c-truth",
+  "label": "correct",
+  "label_strict": "incorrect",
+  "trap": null,
+  "style": "pct_1dec_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-debt_ratio-2025Q2q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_int_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q3c-diff",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_margin-2025Q1q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-debt_ratio-2025Q1q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2026Q2q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "eok_plain",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q2q-diff",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "jo_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q3c-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "approx_jo_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_margin-2026Q2q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_margin-2025Q1q-truth",
+  "label": "correct",
+  "label_strict": "incorrect",
+  "trap": null,
+  "style": "pct_1dec_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_margin-2026Q1q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-assets-2025Q3p-truth",
+  "label": "correct",
+  "label_strict": "incorrect",
+  "trap": null,
+  "style": "trunc_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q1q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "pct_int_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q2q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "approx_jo_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025FYa-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025FYa-diff",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-equity_total-2025Q1p-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q4q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "trunc_cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q2q-truth",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "approx_pct_int",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income-2026Q2q-truth",
+  "label": "correct",
+  "label_strict": "incorrect",
+  "trap": null,
+  "style": "pct_int_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q3c-growth_denominator_current",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "growth_denominator_current",
+  "style": "pct_int_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-liabilities-2025Q1p-unit_x10",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_x10",
+  "style": "baek_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-assets-2026Q1p-prior_quarter",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "prior_quarter",
+  "style": "jo_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q2q-unit_div10",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_div10",
+  "style": "trunc_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q3q-near_miss_0.02",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.02",
+  "style": "trunc_cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income-2026Q2q-unit_x10",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_x10",
+  "style": "baek_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income-2026Q2q-prior_year",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "prior_year",
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-equity_total-2026Q1p-prior_year",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "prior_year",
+  "style": "trunc_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-liabilities-2025Q1p-near_miss_0.01",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.01",
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-liabilities-2026Q1p-unit_div10",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_div10",
+  "style": "jo_1dec",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-equity_total-2026Q1p-unit_div10",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_div10",
+  "style": "trunc_cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025H1c-near_miss_0.02",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.02",
+  "style": "cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-assets-2025Q1p-basis_swap",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "basis_swap",
+  "style": "trunc_cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q3q-sign_flip",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "sign_flip",
+  "style": "baek_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_margin-2025Q1q-near_miss_0.05",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.05",
+  "style": "pct_int",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_margin-2026Q1q-near_miss_0.01",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.01",
+  "style": "pct_1dec_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income_owners-2025Q2q-growth_near_miss_0.02",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "growth_near_miss_0.02",
+  "style": "pct_int_trunc",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-net_income-2025Q4q-prior_year",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "prior_year",
+  "style": "trunc_cheon_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2025Q3c-unit_div100",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "unit_div100",
+  "style": "eok_plain",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-assets-2025Q2p-near_miss_0.01",
+  "label": "incorrect",
+  "label_strict": "incorrect",
+  "trap": "near_miss_0.01",
+  "style": "baek_eok",
+  "n_plans": 1
+ },
+ {
+  "id": "005930-operating_income-2026Q1q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ },
+ {
+  "id": "005930-operating_income-2025Q1q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ },
+ {
+  "id": "005930-operating_income-2025Q3q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ },
+ {
+  "id": "005930-operating_income-2025Q4q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ },
+ {
+  "id": "005930-operating_income-2026Q2q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ },
+ {
+  "id": "005930-operating_income-2025Q2q-combined",
+  "label": "correct",
+  "label_strict": "correct",
+  "trap": null,
+  "style": "combined",
+  "n_plans": 2
+ }
+]
