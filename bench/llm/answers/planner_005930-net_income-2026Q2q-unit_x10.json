@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income-2026Q2q-unit_x10-1",
+      "quote": "삼성전자의 2026년 2분기 당기순이익은 716조 2,400억원을 기록했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income",
+        "span": "당기순이익"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2026년 2분기"
+      },
+      "value": {
+        "span": "716조 2,400억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

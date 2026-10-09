@@ -1,0 +1,51 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025Q2q-combined-1",
+      "quote": "삼성전자의 2025년 2분기 영업이익은 4조 6,761억원으로 전년 동기 대비 55.2% 감소했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2025년 2분기"
+      },
+      "value": {
+        "span": "4조 6,761억원"
+      },
+      "hedge_span": null
+    },
+    {
+      "id": "005930-operating_income-2025Q2q-combined-2",
+      "quote": "삼성전자의 2025년 2분기 영업이익은 4조 6,761억원으로 전년 동기 대비 55.2% 감소했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2025년 2분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 55.2% 감소",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

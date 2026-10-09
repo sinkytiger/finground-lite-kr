@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-liabilities-2025Q1p-unit_x10-1",
+      "quote": "삼성전자의 2025년 1분기 말 부채총계은 1,097조 6,200억원으로 나타났다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "liabilities",
+        "span": "부채총계"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2025년 1분기 말"
+      },
+      "value": {
+        "span": "1,097조 6,200억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

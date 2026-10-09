@@ -7,3 +7,4 @@ build/
 dist/
 .cache/
 *.log
+bench/data/kr16.jsonl

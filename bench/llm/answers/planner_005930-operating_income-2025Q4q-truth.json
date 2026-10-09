@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025Q4q-truth-1",
+      "quote": "삼성전자의 2025년 4분기 영업이익은 20조원을 기록했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q4",
+        "scope": "quarter",
+        "span": "2025년 4분기"
+      },
+      "value": {
+        "span": "20조원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+ "list": [
+  {
+   "corp_code": "00126380",
+   "corp_name": "삼성전자",
+   "stock_code": "005930",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00164742",
+   "corp_name": "현대자동차",
+   "stock_code": "005380",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00164779",
+   "corp_name": "SK하이닉스",
+   "stock_code": "000660",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00266961",
+   "corp_name": "NAVER",
+   "stock_code": "035420",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00258801",
+   "corp_name": "카카오",
+   "stock_code": "035720",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00401731",
+   "corp_name": "LG전자",
+   "stock_code": "066570",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00106641",
+   "corp_name": "기아",
+   "stock_code": "000270",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00164788",
+   "corp_name": "현대모비스",
+   "stock_code": "012330",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00155319",
+   "corp_name": "POSCO홀딩스",
+   "stock_code": "005490",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00356361",
+   "corp_name": "LG화학",
+   "stock_code": "051910",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00126362",
+   "corp_name": "삼성SDI",
+   "stock_code": "006400",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00877059",
+   "corp_name": "삼성바이오로직스",
+   "stock_code": "207940",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00190321",
+   "corp_name": "케이티",
+   "stock_code": "030200",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00159023",
+   "corp_name": "SK텔레콤",
+   "stock_code": "017670",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "00149655",
+   "corp_name": "삼성물산",
+   "stock_code": "028260",
+   "modify_date": ""
+  },
+  {
+   "corp_code": "01515323",
+   "corp_name": "LG에너지솔루션",
+   "stock_code": "373220",
+   "modify_date": ""
+  }
+ ],
+ "note": "built from company.json profiles (corpCode.xml was unavailable); names are stock_name"
+}

@@ -35,16 +35,16 @@ Revenue, cost of sales, gross profit, operating income, net income (total and ow
 
 ## Evaluation
 
-**E1, verifier alone with gold plans.** A benchmark built in reverse from filed values (Samsung 2024 FY–2026 H1, the test fixtures): 934 sentences, 768 with injected trap errors; labels come from the tolerance rule only.
+**E1, verifier alone with gold plans.** A benchmark built in reverse from filed values of 16 large non-financial KOSPI companies (2024 FY–2026 H1): 14,056 sentences, 11,471 with injected trap errors; labels come from the tolerance rule only.
 
 | mode | n | TA | FA | TR | FR | abstain | accepted-claim precision | accuracy | coverage |
 |---|---|---|---|---|---|---|---|---|---|
-| default (rounding or truncation) | 934 | 166 | 0 | 756 | 0 | 12 | 100% | 100% | 98.7% |
-| strict (rounding only) | 934 | 145 | 0 | 777 | 0 | 12 | 100% | 100% | 98.7% |
+| default (rounding or truncation) | 14,056 | 2,585 | 0 | 11,279 | 0 | 192 | 100% | 100% | 98.6% |
+| strict (rounding only) | 14,056 | 2,184 | 0 | 11,680 | 0 | 192 | 100% | 100% | 98.6% |
 
-All 12 abstentions are margin changes written in % instead of %p, which the verifier treats as ambiguous and reports both readings. Trap diagnosis found the expected reading in 488/488 trap samples; 10 of 268 near-miss samples (3.7%) coincidentally matched another reading. One company and template sentences: this shows the verifier behaves as designed, not its accuracy on real news. Full tables: [reports/e1_samsung_fixture.md](reports/e1_samsung_fixture.md).
+All 192 abstentions are margin changes written in % instead of %p, which the verifier treats as ambiguous and reports both readings. Trap diagnosis found the expected reading in 7,319 of 7,434 trap samples (98.5%; the misses are values rounded to 100억 that fall just outside the tolerance of the alternative reading); 187 of 3,845 near-miss samples (4.9%) coincidentally matched another reading. Template sentences: this shows the verifier behaves as designed, not its accuracy on real news. Full tables: [reports/e1_kr16.md](reports/e1_kr16.md); the recorded filings in `bench/fixtures/dart` make it reproducible offline.
 
-**E2/E3 (in progress):** the full pipeline with Opus 5.5 writing plans, and Opus 5.5 as an LLM judge given the same filed figures (with and without the authorized formula), replicating VeriFin's "Judge+Formula" comparison on Korean data.
+**E2/E3, Claude Opus 5.5 in the loop (45 Samsung sentences: 26 correct, 20 with traps of 9 kinds, 6 combined value+growth).** E2: Opus writes the plans following the skill and the verifier judges: 45/45 correct outcomes (TA 25, TR 20, FA 0, FR 0), every combined sentence split into two plans. E3: Opus as a judge given the same filed figures (rounding-only rule stated in the prompt) rejected all 20 planted traps; its single false accept (also with the formula and operands supplied) was a truncated figure that the strict rule counts as wrong. VeriFin's finding that an LLM judge with the correct formula still accepted 75 of 92 wrong claims did not reproduce here; the traps are coarser and the model stronger, and 39 prompts cannot estimate an effect. Results: [reports/llm_samsung_fixture.md](reports/llm_samsung_fixture.md).
 
 ## Papers
 

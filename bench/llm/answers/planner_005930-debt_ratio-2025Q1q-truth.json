@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-debt_ratio-2025Q1q-truth-1",
+      "quote": "삼성전자의 2025년 1분기 부채비율은 27.0%으로 집계됐다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "debt_ratio",
+        "span": "부채비율"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2025년 1분기"
+      },
+      "value": {
+        "span": "27.0%"
+      },
+      "hedge_span": null
+    }
+  ]
+}

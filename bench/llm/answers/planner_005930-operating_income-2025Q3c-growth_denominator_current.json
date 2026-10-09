@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025Q3c-growth_denominator_current-1",
+      "quote": "삼성전자의 2025년 1~3분기 누적 영업이익은 전년 동기 대비 11% 감소했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "cumulative",
+        "span": "2025년 1~3분기 누적"
+      },
+      "change": {
+        "span": "전년 동기 대비 11% 감소",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

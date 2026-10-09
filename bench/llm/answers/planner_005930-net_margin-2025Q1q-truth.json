@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_margin-2025Q1q-truth-1",
+      "quote": "삼성전자의 2025년 1분기 순이익률은 전년 동기 대비 0.9%p 상승했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_margin",
+        "span": "순이익률"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q1",
+        "scope": "quarter",
+        "span": "2025년 1분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 0.9%p 상승",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

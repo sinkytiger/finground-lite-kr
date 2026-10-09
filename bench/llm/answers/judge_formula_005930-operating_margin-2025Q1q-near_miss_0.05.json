@@ -1,0 +1,1 @@
+{"verdict": "reject", "reason": "6.6852 / 79.1405 * 100 = 8.45%, which rounds to 8%, not the claimed 9% (0.55%p off, beyond the 0.5%p tolerance)."}

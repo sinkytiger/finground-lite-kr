@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-liabilities-2026Q1p-unit_div10-1",
+      "quote": "삼성전자의 2026년 1분기 말 부채총계은 14.7조원으로 집계됐다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "liabilities",
+        "span": "부채총계"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2026년 1분기 말"
+      },
+      "value": {
+        "span": "14.7조원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

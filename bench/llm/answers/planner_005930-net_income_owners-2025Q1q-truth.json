@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income_owners-2025Q1q-truth-1",
+      "quote": "삼성전자의 2025년 1분기 지배주주 순이익은 전년 동기 대비 21% 증가했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income_owners",
+        "span": "지배주주 순이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q1",
+        "scope": "quarter",
+        "span": "2025년 1분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 21% 증가",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

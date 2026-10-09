@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income_owners-2025Q2q-unit_div10-1",
+      "quote": "삼성전자의 2025년 2분기 지배주주 순이익은 4,934억원으로 나타났다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income_owners",
+        "span": "지배주주 순이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2025년 2분기"
+      },
+      "value": {
+        "span": "4,934억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

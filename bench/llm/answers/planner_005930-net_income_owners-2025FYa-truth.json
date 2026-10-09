@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income_owners-2025FYa-truth-1",
+      "quote": "삼성전자의 2025년 연간 지배주주 순이익은 44조3천억원을 기록했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income_owners",
+        "span": "지배주주 순이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "FY",
+        "scope": "annual",
+        "span": "2025년 연간"
+      },
+      "value": {
+        "span": "44조3천억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

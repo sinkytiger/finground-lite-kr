@@ -1,0 +1,51 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025Q3q-combined-1",
+      "quote": "삼성전자의 2025년 3분기 영업이익은 12조 1,661억원으로 전년 동기 대비 32.5% 증가했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "quarter",
+        "span": "2025년 3분기"
+      },
+      "value": {
+        "span": "12조 1,661억원"
+      },
+      "hedge_span": null
+    },
+    {
+      "id": "005930-operating_income-2025Q3q-combined-2",
+      "quote": "삼성전자의 2025년 3분기 영업이익은 12조 1,661억원으로 전년 동기 대비 32.5% 증가했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "quarter",
+        "span": "2025년 3분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 32.5% 증가",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

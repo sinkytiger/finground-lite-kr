@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025Q3c-unit_div100-1",
+      "quote": "삼성전자의 2025년 1~3분기 누적 영업이익은 2,353억원이었다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "cumulative",
+        "span": "2025년 1~3분기 누적"
+      },
+      "value": {
+        "span": "2,353억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-equity_total-2026Q1p-prior_year-1",
+      "quote": "삼성전자의 2026년 1분기 말 자본총계은 406조 6,142억원으로 집계됐다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "equity_total",
+        "span": "자본총계"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2026년 1분기 말"
+      },
+      "value": {
+        "span": "406조 6,142억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

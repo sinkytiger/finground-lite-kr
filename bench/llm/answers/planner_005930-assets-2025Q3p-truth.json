@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-assets-2025Q3p-truth-1",
+      "quote": "삼성전자의 2025년 3분기 말 자산총계은 523조 6,595억원이었다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "assets",
+        "span": "자산총계"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "point",
+        "span": "2025년 3분기 말"
+      },
+      "value": {
+        "span": "523조 6,595억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

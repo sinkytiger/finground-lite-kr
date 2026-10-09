@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025H1c-truth-1",
+      "quote": "삼성전자의 2025년 상반기 영업이익은 전년 동기 대비 33.3% 감소했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "H1",
+        "scope": "cumulative",
+        "span": "2025년 상반기"
+      },
+      "change": {
+        "span": "전년 동기 대비 33.3% 감소",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

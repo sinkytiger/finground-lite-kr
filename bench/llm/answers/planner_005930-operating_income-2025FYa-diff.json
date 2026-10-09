@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2025FYa-diff-1",
+      "quote": "삼성전자의 2025년 연간 영업이익은 전년 동기보다 10조9천억원 늘었다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "FY",
+        "scope": "annual",
+        "span": "2025년 연간"
+      },
+      "change": {
+        "span": "전년 동기보다 10조9천억원 늘었다",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

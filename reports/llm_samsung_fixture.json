@@ -1,0 +1,979 @@
+{
+ "results": {
+  "planner": {
+   "TA": 25,
+   "plans_written": 51,
+   "plans_expected": 51,
+   "TR": 20
+  },
+  "judge": {
+   "TR": 23,
+   "TA": 15,
+   "FA": 1
+  },
+  "judge_formula": {
+   "TR": 23,
+   "TA": 15,
+   "FA": 1
+  }
+ },
+ "details": [
+  {
+   "id": "005930-operating_income-2025H1c-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025H1c-truth",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025H1c-truth",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-debt_ratio-2025Q2q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-debt_ratio-2025Q2q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-debt_ratio-2025Q2q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3c-diff",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3c-diff",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3c-diff",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-debt_ratio-2025Q1q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-debt_ratio-2025Q1q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-debt_ratio-2025Q1q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2026Q2q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2026Q2q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2026Q2q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-diff",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-diff",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-diff",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2026Q2q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_margin-2026Q2q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2026Q2q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2025Q1q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_margin-2025Q1q-truth",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2025Q1q-truth",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2026Q1q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_margin-2026Q1q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_margin-2026Q1q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-assets-2025Q3p-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-assets-2025Q3p-truth",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-assets-2025Q3p-truth",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025Q1q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q1q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025Q1q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025FYa-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025FYa-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income_owners-2025FYa-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025FYa-diff",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025FYa-diff",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025FYa-diff",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-equity_total-2025Q1p-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-equity_total-2025Q1p-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-equity_total-2025Q1p-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q4q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q4q-truth",
+   "exp": "judge",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q4q-truth",
+   "exp": "judge_formula",
+   "label": "correct",
+   "decision": "accept",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income-2026Q2q-truth",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-net_income-2026Q2q-truth",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-net_income-2026Q2q-truth",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": null
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-growth_denominator_current",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-growth_denominator_current",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "growth_denominator_current"
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-growth_denominator_current",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "growth_denominator_current"
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-unit_x10",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-unit_x10",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_x10"
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-unit_x10",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_x10"
+  },
+  {
+   "id": "005930-assets-2026Q1p-prior_quarter",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-assets-2026Q1p-prior_quarter",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_quarter"
+  },
+  {
+   "id": "005930-assets-2026Q1p-prior_quarter",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_quarter"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-unit_div10",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-unit_div10",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-unit_div10",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-near_miss_0.02",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-near_miss_0.02",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.02"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-near_miss_0.02",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.02"
+  },
+  {
+   "id": "005930-net_income-2026Q2q-unit_x10",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income-2026Q2q-unit_x10",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_x10"
+  },
+  {
+   "id": "005930-net_income-2026Q2q-unit_x10",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_x10"
+  },
+  {
+   "id": "005930-net_income-2026Q2q-prior_year",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income-2026Q2q-prior_year",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-net_income-2026Q2q-prior_year",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-prior_year",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-prior_year",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-prior_year",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-near_miss_0.01",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-near_miss_0.01",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-liabilities-2025Q1p-near_miss_0.01",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-liabilities-2026Q1p-unit_div10",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-liabilities-2026Q1p-unit_div10",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-liabilities-2026Q1p-unit_div10",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-unit_div10",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-unit_div10",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-equity_total-2026Q1p-unit_div10",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div10"
+  },
+  {
+   "id": "005930-net_income_owners-2025H1c-near_miss_0.02",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025H1c-near_miss_0.02",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.02"
+  },
+  {
+   "id": "005930-net_income_owners-2025H1c-near_miss_0.02",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.02"
+  },
+  {
+   "id": "005930-assets-2025Q1p-basis_swap",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-assets-2025Q1p-basis_swap",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "basis_swap"
+  },
+  {
+   "id": "005930-assets-2025Q1p-basis_swap",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "basis_swap"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-sign_flip",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-sign_flip",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "sign_flip"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q3q-sign_flip",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "sign_flip"
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-near_miss_0.05",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-near_miss_0.05",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.05"
+  },
+  {
+   "id": "005930-operating_margin-2025Q1q-near_miss_0.05",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.05"
+  },
+  {
+   "id": "005930-operating_margin-2026Q1q-near_miss_0.01",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-operating_margin-2026Q1q-near_miss_0.01",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-operating_margin-2026Q1q-near_miss_0.01",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-growth_near_miss_0.02",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-growth_near_miss_0.02",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "growth_near_miss_0.02"
+  },
+  {
+   "id": "005930-net_income_owners-2025Q2q-growth_near_miss_0.02",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "growth_near_miss_0.02"
+  },
+  {
+   "id": "005930-net_income-2025Q4q-prior_year",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-net_income-2025Q4q-prior_year",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-net_income-2025Q4q-prior_year",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "prior_year"
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-unit_div100",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-unit_div100",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div100"
+  },
+  {
+   "id": "005930-operating_income-2025Q3c-unit_div100",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "unit_div100"
+  },
+  {
+   "id": "005930-assets-2025Q2p-near_miss_0.01",
+   "exp": "planner",
+   "label": "incorrect",
+   "decision": "reject",
+   "statuses": [
+    "contradicted"
+   ]
+  },
+  {
+   "id": "005930-assets-2025Q2p-near_miss_0.01",
+   "exp": "judge",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-assets-2025Q2p-near_miss_0.01",
+   "exp": "judge_formula",
+   "label": "incorrect",
+   "decision": "reject",
+   "trap": "near_miss_0.01"
+  },
+  {
+   "id": "005930-operating_income-2026Q1q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q1q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q3q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q4q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2026Q2q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  },
+  {
+   "id": "005930-operating_income-2025Q2q-combined",
+   "exp": "planner",
+   "label": "correct",
+   "decision": "accept",
+   "statuses": [
+    "supported",
+    "supported"
+   ]
+  }
+ ]
+}

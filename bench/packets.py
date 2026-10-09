@@ -147,9 +147,12 @@ def score(args) -> int:
             jf = answers / f"{exp}_{sid}.json"
             if jf.exists() and m["style"] != "combined":
                 verdict = json.loads(jf.read_text(encoding="utf-8")).get("verdict", "abstain")
-                results[exp][_outcome(m["label"], verdict)] += 1
-                details.append({"id": sid, "exp": exp, "label": m["label"], "decision": verdict, "trap": m["trap"]})
-    md = ["# LLM 실험 결과 (E2 계획 작성, E3 LLM 판정자)", "", "| 실험 | n | TA | FA | TR | FR | 보류 | 수용 정밀도 | 정확도 | 커버리지 |", "|---|---|---|---|---|---|---|---|---|---|"]
+                # the judge prompt states the rounding-only rule, so judges are scored against the strict labels
+                results[exp][_outcome(m["label_strict"], verdict)] += 1
+                details.append({"id": sid, "exp": exp, "label": m["label_strict"], "decision": verdict, "trap": m["trap"]})
+    md = ["# LLM 실험 결과 (E2 계획 작성, E3 LLM 판정자)", "",
+          "planner = 모델이 쓴 계획을 검증기(기본 모드)가 판정, 기본 라벨 기준. judge/judge_formula = 모델이 직접 판정(프롬프트는 반올림만 허용), 엄격 라벨 기준.", "",
+          "| 실험 | n | TA | FA | TR | FR | 보류 | 수용 정밀도 | 정확도 | 커버리지 |", "|---|---|---|---|---|---|---|---|---|---|"]
     for exp, c in results.items():
         n = sum(c[k] for k in ("TA", "FA", "TR", "FR", "Abs"))
         if not n:
@@ -159,9 +162,10 @@ def score(args) -> int:
         acc = (c["TA"] + c["TR"]) / dec if dec else None
         pct = lambda x: "-" if x is None else f"{x * 100:.1f}%"
         md.append(f"| {exp} | {n} | {c['TA']} | {c['FA']} | {c['TR']} | {c['FR']} | {c['Abs']} | {pct(prec)} | {pct(acc)} | {pct(dec / n)} |")
-    fa = [d for d in details if d["exp"] != "planner" and _outcome(d["label"], d["decision"]) == "FA"]
-    if fa:
-        md += ["", "## LLM 판정자가 수용한 틀린 주장", ""] + [f"- {d['exp']} {d['id']} (함정 {d['trap']})" for d in fa]
+    for kind, title in (("FA", "수용한 틀린 주장 (false accept)"), ("FR", "기각한 맞는 주장 (false reject)")):
+        bad = [d for d in details if _outcome(d["label"], d["decision"]) == kind]
+        if bad:
+            md += ["", f"## {title}", ""] + [f"- {d['exp']} {d['id']} (함정 {d.get('trap')}; {d.get('statuses', '')})" for d in bad]
     text = "\n".join(md)
     print(text)
     if args.out:

@@ -1,0 +1,1 @@
+{"verdict": "reject", "reason": "(23.5273 - 26.2332) / 26.2332 * 100 = -10.3%, not -11%; the 11% figure results from dividing by the current-period value instead."}

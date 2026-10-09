@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income_owners-2025Q3c-diff-1",
+      "quote": "삼성전자의 2025년 1~3분기 누적 지배주주 순이익은 전년 동기보다 1조1천억원 줄었다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income_owners",
+        "span": "지배주주 순이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "cumulative",
+        "span": "2025년 1~3분기 누적"
+      },
+      "change": {
+        "span": "전년 동기보다 1조1천억원 줄었다",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

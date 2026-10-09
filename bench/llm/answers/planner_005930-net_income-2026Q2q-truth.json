@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income-2026Q2q-truth-1",
+      "quote": "삼성전자의 2026년 2분기 당기순이익은 전년 동기 대비 1,299% 증가했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income",
+        "span": "당기순이익"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2026년 2분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 1,299% 증가",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income-2025Q4q-prior_year-1",
+      "quote": "삼성전자의 2025년 4분기 당기순이익은 7조7천억원으로 집계됐다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income",
+        "span": "당기순이익"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q4",
+        "scope": "quarter",
+        "span": "2025년 4분기"
+      },
+      "value": {
+        "span": "7조7천억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

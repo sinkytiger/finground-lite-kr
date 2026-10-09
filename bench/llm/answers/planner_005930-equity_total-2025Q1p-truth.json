@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-equity_total-2025Q1p-truth-1",
+      "quote": "삼성전자의 2025년 1분기 말 자본총계은 406조6천억원을 올렸다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "equity_total",
+        "span": "자본총계"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2025년 1분기 말"
+      },
+      "value": {
+        "span": "406조6천억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

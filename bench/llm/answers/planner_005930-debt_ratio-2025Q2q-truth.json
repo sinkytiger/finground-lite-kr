@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-debt_ratio-2025Q2q-truth-1",
+      "quote": "삼성전자의 2025년 2분기 부채비율은 26%을 기록했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "debt_ratio",
+        "span": "부채비율"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q2",
+        "scope": "point",
+        "span": "2025년 2분기"
+      },
+      "value": {
+        "span": "26%"
+      },
+      "hedge_span": null
+    }
+  ]
+}

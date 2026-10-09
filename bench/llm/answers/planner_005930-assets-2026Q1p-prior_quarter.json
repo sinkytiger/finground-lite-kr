@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-assets-2026Q1p-prior_quarter-1",
+      "quote": "삼성전자의 2026년 1분기 말 자산총계은 566.9조원을 기록했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "assets",
+        "span": "자산총계"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q1",
+        "scope": "point",
+        "span": "2026년 1분기 말"
+      },
+      "value": {
+        "span": "566.9조원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

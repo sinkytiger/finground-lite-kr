@@ -1,0 +1,51 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_income-2026Q2q-combined-1",
+      "quote": "삼성전자의 2026년 2분기 영업이익은 89조 4,924억원으로 전년 동기 대비 1,813.8% 증가했다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2026년 2분기"
+      },
+      "value": {
+        "span": "89조 4,924억원"
+      },
+      "hedge_span": null
+    },
+    {
+      "id": "005930-operating_income-2026Q2q-combined-2",
+      "quote": "삼성전자의 2026년 2분기 영업이익은 89조 4,924억원으로 전년 동기 대비 1,813.8% 증가했다",
+      "kind": "change",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_income",
+        "span": "영업이익"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q2",
+        "scope": "quarter",
+        "span": "2026년 2분기"
+      },
+      "change": {
+        "span": "전년 동기 대비 1,813.8% 증가",
+        "compare": "yoy"
+      },
+      "hedge_span": null
+    }
+  ]
+}

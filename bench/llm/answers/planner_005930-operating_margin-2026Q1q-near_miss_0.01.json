@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-operating_margin-2026Q1q-near_miss_0.01-1",
+      "quote": "삼성전자의 2026년 1분기 영업이익률은 42.3%을 올렸다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "operating_margin",
+        "span": "영업이익률"
+      },
+      "period": {
+        "year": 2026,
+        "part": "Q1",
+        "scope": "quarter",
+        "span": "2026년 1분기"
+      },
+      "value": {
+        "span": "42.3%"
+      },
+      "hedge_span": null
+    }
+  ]
+}

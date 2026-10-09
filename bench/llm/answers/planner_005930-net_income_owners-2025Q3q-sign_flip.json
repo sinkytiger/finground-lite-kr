@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "id": "005930-net_income_owners-2025Q3q-sign_flip-1",
+      "quote": "삼성전자의 2025년 3분기 지배주주 순손실은 12조 100억원이었다",
+      "kind": "value",
+      "company": {
+        "name": "삼성전자",
+        "span": "삼성전자"
+      },
+      "metric": {
+        "id": "net_income_owners",
+        "span": "지배주주 순손실"
+      },
+      "period": {
+        "year": 2025,
+        "part": "Q3",
+        "scope": "quarter",
+        "span": "2025년 3분기"
+      },
+      "value": {
+        "span": "12조 100억원"
+      },
+      "hedge_span": null
+    }
+  ]
+}

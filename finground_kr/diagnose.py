@@ -80,7 +80,9 @@ def diagnose(store: FactStore, corp: str, mid: str, period: Period, basis: str, 
 
     mode = "default"  # diagnosis is a hint, not an acceptance decision: always use the lenient tolerance
 
-    def near(a: Decimal, b: Decimal) -> bool:  # gross-error hints (unit, sign) only need to be in the neighbourhood
+    def near(a: Decimal, b: Decimal) -> bool:
+        """Gross-error hints (unit, sign) only need to be in the neighbourhood (2%). Not used for the other
+        readings: widening them raised spurious hints on near-miss claims from 5% to 23% for a 0.2-point gain."""
         return b != 0 and abs(a - b) <= abs(b) * Decimal("0.02")
     out: list[dict] = []
     checked = 0
