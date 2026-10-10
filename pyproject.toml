@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "finground-lite-kr"
-version = "0.1.0"
+version = "0.1.1"
 description = "Verify Korean financial claims against DART filings (Claude Code plugin + MCP server)"
 readme = "README.md"
 license = { text = "MIT" }

@@ -1,6 +1,6 @@
 {
   "name": "finground-lite-kr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Verify Korean financial claims (매출·영업이익·순이익·자산·부채·자본, 이익률, 전년 대비 증감) against DART filings: a skill plus a standard-library MCP server. Numbers are re-read and checked by code, never by the model.",
   "author": { "name": "sinkytiger" },
   "license": "MIT",
