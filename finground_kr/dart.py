@@ -147,8 +147,19 @@ def normalize(raw: dict, corp_code: str, year: int, period: str, basis: str) -> 
     return Report(corp_code, year, period, basis, rcept, filed_date(rcept), currency, rows)
 
 
+SEED_PATH = Path(__file__).with_name("data") / "corp_codes_seed.json"
+
+
+def _norm_query(q: str) -> str:
+    return re.sub(r"\s+", "", str(q)).replace("(주)", "").replace("주식회사", "").lower()
+
+
 class DartClient:
-    """Thin client. `cache_dir` stores raw JSON responses; `offline=True` never touches the network."""
+    """Thin client. `cache_dir` stores raw JSON responses; `offline=True` never touches the network.
+
+    Company resolution uses the full corpCode.xml list when it can be fetched (cached afterwards) plus a
+    built-in seed of major companies with newspaper aliases (현대차, 네이버, KT ...). When DART's corpCode
+    service is down (status 800), only the seed is searched and `corp_codes_source` says "seed"."""
 
     def __init__(self, cache_dir: str | Path, api_key: str | None = None, offline: bool = False,
                  pause: float = 0.25, timeout: float = 60.0) -> None:
@@ -160,6 +171,8 @@ class DartClient:
         if self._key.startswith("${"):  # unsubstituted plugin variable
             self._key = ""
         self._corp_codes: list[dict] | None = None
+        self.corp_codes_source = "unknown"   # "dart" | "seed" after the first resolve
+        self.corp_codes_error: str | None = None
 
     # ------------------------------------------------------------------ transport
     def _require_key(self) -> None:
@@ -199,8 +212,23 @@ class DartClient:
         return data
 
     # ------------------------------------------------------------------ companies
+    @staticmethod
+    def seed_companies() -> list[dict]:
+        return json.loads(SEED_PATH.read_text(encoding="utf-8"))["list"] if SEED_PATH.exists() else []
+
     def corp_codes(self) -> list[dict]:
+        """Full DART list when available; otherwise the built-in seed (never raises for a missing list)."""
         if self._corp_codes is None:
+            try:
+                self._corp_codes = self._fetch_corp_codes()
+                self.corp_codes_source, self.corp_codes_error = "dart", None
+            except DartError as exc:
+                self._corp_codes = self.seed_companies()
+                self.corp_codes_source, self.corp_codes_error = "seed", str(exc)
+        return self._corp_codes
+
+    def _fetch_corp_codes(self) -> list[dict]:
+        if True:
             def fetch():
                 body = self._get("corpCode.xml")
                 if not body.startswith(b"PK"):
@@ -211,17 +239,24 @@ class DartClient:
                     root = ET.fromstring(zf.read(zf.namelist()[0]))
                 return {"list": [{k: (el.findtext(k) or "").strip() for k in ("corp_code", "corp_name", "stock_code", "modify_date")}
                                  for el in root.iter("list")]}
-            self._corp_codes = self._cached("corp_codes", fetch)["list"]
-        return self._corp_codes
+            return self._cached("corp_codes", fetch)["list"]
 
     def resolve(self, query: str) -> list[dict]:
-        """Listed companies matching a stock code, corp code or (space-insensitive) name. Exact matches only."""
-        q = re.sub(r"\s+", "", str(query)).lower()
-        listed = [r for r in self.corp_codes() if r["stock_code"]]
-        hits = [r for r in listed if q in (r["stock_code"], r["corp_code"]) or re.sub(r"\s+", "", r["corp_name"]).lower() == q]
-        if not hits:
-            hits = [r for r in listed if re.sub(r"\s+", "", r["corp_name"]).lower() == q.replace("(주)", "").replace("주식회사", "")]
-        return hits
+        """Listed companies matching a stock code, corp code, registered name or newspaper alias (exact, space-insensitive)."""
+        q = _norm_query(query)
+        if not q:
+            return []
+        hits: dict[str, dict] = {}
+        for r in self.seed_companies():  # aliases first: 현대차, 네이버, KT ...
+            names = {_norm_query(r["corp_name"])} | {_norm_query(a) for a in r.get("aliases", [])}
+            if q in (r["stock_code"], r["corp_code"]) or q in names:
+                hits[r["corp_code"]] = {"corp_code": r["corp_code"], "corp_name": r["corp_name"], "stock_code": r["stock_code"]}
+        for r in self.corp_codes():
+            if not r.get("stock_code"):
+                continue
+            if q in (r["stock_code"], r["corp_code"]) or _norm_query(r["corp_name"]) == q:
+                hits.setdefault(r["corp_code"], {"corp_code": r["corp_code"], "corp_name": r["corp_name"], "stock_code": r["stock_code"]})
+        return list(hits.values())
 
     def company(self, corp_code: str) -> dict:
         return self._cached(f"company_{corp_code}", lambda: self._json("company.json", corp_code=corp_code))

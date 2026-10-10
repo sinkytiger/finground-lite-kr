@@ -146,7 +146,8 @@ class Tools:
     def resolve_company(self, query: str) -> dict:
         hits = self.client.resolve(query)
         return {"query": query, "matches": hits,
-                "markdown": "\n".join(f"- {h['corp_name']} (종목 {h['stock_code']}, corp {h['corp_code']})" for h in hits) or "(no match)"}
+                "markdown": "\n".join(f"- {h['corp_name']} (종목 {h['stock_code']}, corp {h['corp_code']})" for h in hits)
+                or f"'{query}'와 정확히 일치하는 상장사가 없습니다 (공시상 회사명이나 6자리 종목코드로 다시 시도)"}
 
     def list_metrics(self) -> dict:
         base = [{"id": k, "label": v["label"], "statement": v["sj"], "account_ids": v["ids"], "kind": "flow" if v["flow"] else "point"}
@@ -235,7 +236,10 @@ def serve(client: DartClient | None = None) -> None:
                 try:
                     data = impl[name](**args)
                     text = data.pop("markdown", None) or json.dumps(data, ensure_ascii=False, indent=1)
-                    result = {"content": [{"type": "text", "text": text}], "structuredContent": data, "isError": False}
+                    if client.corp_codes_source == "seed" and name in ("verify_claims", "lookup_facts", "resolve_company"):
+                        text += ("\n\n참고: DART 회사코드 서비스(corpCode.xml)를 받지 못해 내장 목록(비금융 대형주 "
+                                 f"{len(client.seed_companies())}개사)만으로 회사를 찾았습니다. ({client.corp_codes_error})")
+                    result = {"content": [{"type": "text", "text": text}], "isError": False}
                 except (ToolError, DartError, Unavailable, TypeError, ValueError) as exc:
                     result = {"content": [{"type": "text", "text": f"error: {exc}"}], "isError": True}
             else:

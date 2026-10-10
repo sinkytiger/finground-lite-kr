@@ -20,5 +20,8 @@ finground-kr = "finground_kr.cli:main"
 [tool.setuptools]
 packages = ["finground_kr"]
 
+[tool.setuptools.package-data]
+finground_kr = ["data/*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

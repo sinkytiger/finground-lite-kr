@@ -31,7 +31,7 @@ The sentence used the first-half cumulative figure where the three-month Q2 figu
 
 ## Scope (v1)
 
-Revenue, cost of sales, gross profit, operating income, net income (total and owners'), assets, liabilities, equity (total and owners'); operating/net/gross margin, debt ratio, equity ratio; quarterly (3-month), H1 and Q3 cumulative, Q4 (annual − Q3 cumulative), annual, quarter-end; year-on-year, quarter-on-quarter and vs-year-end growth, differences, %p changes, directions, profit/loss turns. Prior-year figures come from the same report's comparative columns. Reports filed after the article date are invisible. Out of scope (abstained): financial companies, non-December fiscal years, share prices and market cap, pre-restatement figures, preliminary earnings releases.
+Revenue, cost of sales, gross profit, operating income, net income (total and owners'), assets, liabilities, equity (total and owners'); operating/net/gross margin, debt ratio, equity ratio; quarterly (3-month), H1 and Q3 cumulative, Q4 (annual − Q3 cumulative), annual, quarter-end; year-on-year, quarter-on-quarter and vs-year-end growth, differences, %p changes, directions, profit/loss turns. Prior-year figures come from the same report's comparative columns. Reports filed after the article date are invisible. Company names resolve through DART's corpCode list, with a built-in seed of 16 large companies (and their newspaper aliases) that also serves as a fallback while that DART service is under maintenance. Out of scope (abstained): financial companies, non-December fiscal years, share prices and market cap, pre-restatement figures, preliminary earnings releases.
 
 ## Evaluation
 

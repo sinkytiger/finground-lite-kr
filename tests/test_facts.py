@@ -88,3 +88,12 @@ def test_missing_report_and_offline(client):
         client.report("00000009", 2026, "Q1", "CFS")
     assert client.resolve("삼성전자")[0]["stock_code"] == "005930" == client.resolve(" 삼성 전자 ")[0]["stock_code"]
     assert len(client.resolve("샘플전자")) == 2 and client.resolve("없는회사") == []
+
+
+def test_seed_fallback_and_aliases(tmp_path):
+    from finground_kr.dart import DartClient
+    c = DartClient(tmp_path, offline=True)  # no corp_codes cache, no network -> seed
+    assert c.resolve("현대차")[0]["stock_code"] == "005380" and c.corp_codes_source == "seed"
+    assert c.resolve("네이버")[0]["corp_code"] == c.resolve("NAVER")[0]["corp_code"] == c.resolve("035420")[0]["corp_code"]
+    assert c.resolve("케이티")[0]["corp_name"] == "KT" and c.resolve("에스케이하이닉스(주)")[0]["corp_name"] == "SK하이닉스"
+    assert c.resolve("삼성생명") == [] and "offline" in (c.corp_codes_error or "")

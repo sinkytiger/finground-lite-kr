@@ -144,7 +144,9 @@ def test_mcp_server_round_trip():
     assert replies[1]["result"]["protocolVersion"] == "2025-06-18"
     assert [t["name"] for t in replies[2]["result"]["tools"]] == ["verify_claims", "lookup_facts", "resolve_company", "list_metrics"]
     body = replies[3]["result"]
-    assert body["isError"] is False and body["structuredContent"]["results"][0]["status"] == "contradicted" and "상반기 누적" in body["content"][0]["text"]
+    text = body["content"][0]["text"]
+    assert body["isError"] is False and "❌ 모순" in text and "상반기 누적" in text and "structuredContent" not in body
+    assert "내장 목록" not in text  # fixtures carry a corp_codes cache, so the seed note must not appear
     assert replies[4]["result"]["isError"] is True and "DART_API_KEY" in replies[4]["result"]["content"][0]["text"]
     assert replies[5]["error"]["code"] == -32601
     assert proc.stderr == b""
